@@ -21,3 +21,18 @@ Feature: Invite user
     Then I should be on the nda page
     And I should be able to login with my new password
   
+Feature Click a thumbnail
+	In order to view information on a video
+	As a user
+	I want be able to see the differences between existing videos
+	
+	Background:
+	Given I am a user
+	I want to view information on existing video information
+	
+	Scnenario: User sees a page full of thumbnails
+	Given I are on the page with thumbnails
+	When I am at the video page
+	And I click a thumbnail
+	Then I should see a new page with more information on a thumbnail
+	
